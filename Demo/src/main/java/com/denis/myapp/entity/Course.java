@@ -10,6 +10,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(
         uniqueConstraints = {
@@ -38,6 +40,7 @@ public class Course {
 		this.name = name;
 	}
 	
+	@JsonIgnore
 	@ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REMOVE, CascadeType.REFRESH, CascadeType.DETACH}, fetch = FetchType.EAGER)
 	public Teacher getTeacher() {
 		return teacher;
@@ -46,6 +49,7 @@ public class Course {
 		this.teacher = teacher;
 	}
 
+	@JsonIgnore
 	@ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REMOVE, CascadeType.REFRESH, CascadeType.DETACH}, fetch = FetchType.EAGER)
 	public Student getStudent() {
 		return student;
