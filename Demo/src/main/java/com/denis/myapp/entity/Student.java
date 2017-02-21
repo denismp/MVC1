@@ -1,5 +1,6 @@
 package com.denis.myapp.entity;
 
+import java.io.Serializable;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -18,7 +19,11 @@ import javax.persistence.UniqueConstraint;
                 @UniqueConstraint(columnNames = {"name"})
         }
 )
-public class Student {
+public class Student implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2988647482401048060L;
 	private Long id;
 	private String name;
 	private Set<Course> courses;

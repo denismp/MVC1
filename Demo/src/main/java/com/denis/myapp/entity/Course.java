@@ -1,5 +1,7 @@
 package com.denis.myapp.entity;
 
+import java.io.Serializable;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -19,7 +21,11 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
                 @UniqueConstraint(columnNames = {"id", "student_id"})               
         }
 )
-public class Course {
+public class Course implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2646976010836130840L;
 	private Long id;
 	private String name;
 	private Teacher teacher;
