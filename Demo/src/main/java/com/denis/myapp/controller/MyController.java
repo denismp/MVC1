@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class MyController {
+	@SuppressWarnings("unused")
 	private static final Logger logger = LoggerFactory.getLogger(MyController.class);
 	@RequestMapping(value = "/hello", method = RequestMethod.GET)
 	 public String hello(Model model){

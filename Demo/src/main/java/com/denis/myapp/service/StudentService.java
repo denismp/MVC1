@@ -11,6 +11,7 @@ import com.denis.myapp.entity.Student;
 
 @Service("studentService")
 public class StudentService {
+	@SuppressWarnings("unused")
 	private final Logger log = Logger.getLogger (this.getClass());
 	
 	@Autowired
