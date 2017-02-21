@@ -1,0 +1,5 @@
+package com.denis.myapp.dao;
+
+public class StudentDao {
+
+}

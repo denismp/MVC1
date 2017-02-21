@@ -1,0 +1,25 @@
+package com.denis.myapp.dao;
+
+import java.io.Serializable;
+
+import org.apache.log4j.Logger;
+import org.hibernate.Session;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.orm.hibernate4.HibernateTemplate;
+
+public class CourseDao implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 9139684526857564519L;
+	private final Logger log = Logger.getLogger (this.getClass());
+	@Autowired
+	protected HibernateTemplate hibernateTemplate;
+
+	protected Session currentDatabaseSession() {
+		
+		return this.hibernateTemplate.getSessionFactory().getCurrentSession();
+	}
+
+}

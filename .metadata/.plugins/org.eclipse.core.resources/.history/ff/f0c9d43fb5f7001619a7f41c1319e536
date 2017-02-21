@@ -1,0 +1,15 @@
+# Hibernate Settings
+hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
+hibernate.show_sql = true
+hibernate.format_sql = true
+hibernate.createorupdate = create
+
+# Hikari DB Connection Settings
+hikari.cachePrepStmts=true
+hikari.prepStmtCacheSize=500
+hikari.prepStmtCacheSqlLimit=2048
+hikari.maximumPoolSize=50
+hikari.idleTimeout=60000
+hikari.autoCommit=true
+hikari.connectionTimeout=30000
+hikari.minimumIdle=20

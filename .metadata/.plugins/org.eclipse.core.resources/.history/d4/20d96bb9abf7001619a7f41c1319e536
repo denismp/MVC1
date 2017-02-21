@@ -1,0 +1,5 @@
+package com.denis.myapp.service;
+
+public class StudentService {
+
+}

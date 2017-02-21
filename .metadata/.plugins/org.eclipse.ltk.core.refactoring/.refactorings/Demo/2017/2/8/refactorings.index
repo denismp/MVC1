@@ -1,0 +1,24 @@
+1487599256769	Move files
+1487599270092	Move file
+1487599768822	Delete element
+1487602226555	Delete element
+1487602563119	Rename resource 'angular-1.6.1'
+1487606169709	Encapsulate field 'id'
+1487606176597	Encapsulate field 'name'
+1487606576083	Encapsulate field 'id'
+1487606582271	Encapsulate field 'name'
+1487606687960	Encapsulate field 'id'
+1487606696006	Encapsulate field 'name'
+1487606752886	Rename type 'teacher'
+1487606779508	Rename type 'course'
+1487606809102	Copy compilation unit
+1487606815179	Delete element
+1487606824579	Rename compilation unit 'Course2.java'
+1487606850507	Copy compilation unit
+1487606856964	Delete element
+1487606865288	Rename compilation unit 'Teacher2.java'
+1487607715777	Encapsulate field 'courses'
+1487607930275	Encapsulate field 'teachers'
+1487608134152	Encapsulate field 'students'
+1487608333862	Encapsulate field 'courses'
+1487624720925	Rename package 'com.denis.myapp.enity'

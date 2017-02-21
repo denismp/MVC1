@@ -1,0 +1,5 @@
+package com.denis.myapp.controller;
+
+public class MyRestController {
+
+}
