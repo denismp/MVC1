@@ -1,6 +1,6 @@
 "use strict"; 
 angular.module('StudentApp',[]); 
-angular.module('StudentApp').service('StudentModel', [function($http){ 
+angular.module('StudentApp').service('StudentModel', ['$http', function($http){ 
 	this.students = [{name:"NONE"},{name:"NONE2"}];
 	this.getStudents = function(){
 		alert("getStudents called.");
