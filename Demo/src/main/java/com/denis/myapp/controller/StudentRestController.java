@@ -15,7 +15,7 @@ import com.denis.myapp.entity.Student;
 import com.denis.myapp.service.StudentService;
 
 @RestController
-public class MyRestController {
+public class StudentRestController {
 	private final Logger log = Logger.getLogger (this.getClass());
 	
 	@Autowired
