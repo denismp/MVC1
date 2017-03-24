@@ -17,7 +17,7 @@ import com.denis.myapp.entity.Course;
 
 @Repository("courseDao")
 @Transactional(value="transactionManager")
-public class CourseDao implements Serializable{
+public class CourseDao implements CourseDaoInterface, Serializable{
 
 	/**
 	 * 

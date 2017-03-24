@@ -20,7 +20,7 @@ import com.denis.myapp.entity.Student;
 
 @Repository("studentDao")
 @Transactional(value="transactionManager")
-public class StudentDao implements Serializable{
+public class StudentDao implements StudentDaoInterface, Serializable{
 	/**
 	 * 
 	 */

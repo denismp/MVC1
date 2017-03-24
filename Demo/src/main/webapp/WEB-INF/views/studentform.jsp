@@ -11,7 +11,12 @@
 		<p><button ng-click="main.model.getStudents()">Get Students</button></p>
 		<ul>
 			<li ng-repeat="student in main.model.students">	
-				ID={{student.id}} Name={{student.name}} Courses={{student.courses}}		
+				ID={{student.id}} Name={{student.name}} Courses={{student.courses}}	
+				<div>
+					<li ng-repeat="course in main.model.students.courses"/>
+						Course={{course.name}}
+					</li>
+				</div>	
 			</li>
 		</ul>
 	</div> 
